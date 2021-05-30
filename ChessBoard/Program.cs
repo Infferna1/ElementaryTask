@@ -4,11 +4,36 @@ namespace ChessBoard
 {
     class Program
     {
+        static byte InputHeight()
+        {
+            Console.WriteLine("Enter height:");
+            byte height = byte.Parse(Console.ReadLine());
+            while ((height <= 0) || (height >= 51))
+            {
+                Console.WriteLine("Height must be bigger than 0 and lower than 51\nEnter height:");
+                height = byte.Parse(Console.ReadLine());
+            }
+            return height;
+        }
+
+        static byte InputWidth()
+        {
+            Console.WriteLine("Enter width:");
+            byte width = byte.Parse(Console.ReadLine());
+            while ((width <= 0) || (width >= 51))
+            {
+                Console.WriteLine("Width must be bigger than 0 and lower than 51\nEnter width:");
+                width = byte.Parse(Console.ReadLine());
+            } 
+            return width;
+        }
+
+
         static void Main(string[] args)
         {
-            ChessBoard chessBoard = new ChessBoard();
-            chessBoard.Input();
-            chessBoard.Output();
+            ChessBoard chessBoard = new ChessBoard(InputHeight(), InputWidth());
+            chessBoard.ChessBoardPrint();
+            Console.ReadKey();
         }
     }
 }

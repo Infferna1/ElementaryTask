@@ -6,28 +6,19 @@ namespace ChessBoard
 {
     class ChessBoard
     {
-        public int Height { get; set; }
-        public int Width { get; set; }
-        
-        public ChessBoard (/*int height, int width*/)
+        private byte Height;
+        private byte Width;
+
+        public ChessBoard(byte height, byte width)
         {
-            //Height = height;
-            //Width = width;
+            Height = height;
+            Width = width;
         }
 
-        public void Input()
+        public void ChessBoardPrint()
         {
-            Console.WriteLine("Enter height:");
-            Height = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter width:");
-            Width = int.Parse(Console.ReadLine());
-        }
-
-        public void Output()
-        {
-            for (int i = 0; i < Height; i++, Console.WriteLine())
-                for (int j = 0; j < Width; j++)
+            for (byte i = 0; i < Height; i++, Console.WriteLine())
+                for (byte j = 0; j < Width; j++)
                 {
                     if ((i + j) % 2 == 0)
                     {
