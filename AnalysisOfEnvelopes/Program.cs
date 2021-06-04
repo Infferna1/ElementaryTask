@@ -4,9 +4,13 @@ namespace AnalysisOfEnvelopes
 {
     class Program
     {
+        //TODO: Сделать нормальную валидацию данных
+
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Controller controller = new Controller();
+            controller.Start();
         }
     }
 }

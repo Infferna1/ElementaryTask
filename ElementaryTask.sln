@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChessBoardTask", "ChessBoard\ChessBoardTask.csproj", "{C307B1DB-B963-4778-8569-25C58A12BF20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChessBoard", "ChessBoard\ChessBoard.csproj", "{C307B1DB-B963-4778-8569-25C58A12BF20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisOfEnvelopes", "AnalysisOfEnvelopes\AnalysisOfEnvelopes.csproj", "{E4CEA7A1-41F7-4A6C-93E0-2F5EAECACFAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalysisOfEnvelopes", "AnalysisOfEnvelopes\AnalysisOfEnvelopes.csproj", "{E4CEA7A1-41F7-4A6C-93E0-2F5EAECACFAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingTriangles", "SortingTriangles\SortingTriangles.csproj", "{BC277D59-44E0-4F1E-B827-4DE393651349}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileParser", "FileParser\FileParser.csproj", "{4E79FAC3-E996-402A-BC10-E8E35944BDAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToText", "NumberToText\NumberToText.csproj", "{2D57FDB0-FBD6-4455-96F1-D81DF424F72F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyTicket", "LuckyTicket\LuckyTicket.csproj", "{17F14EFE-52E0-4B2C-B12A-07A50D02616D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{E4CEA7A1-41F7-4A6C-93E0-2F5EAECACFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4CEA7A1-41F7-4A6C-93E0-2F5EAECACFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4CEA7A1-41F7-4A6C-93E0-2F5EAECACFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC277D59-44E0-4F1E-B827-4DE393651349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC277D59-44E0-4F1E-B827-4DE393651349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC277D59-44E0-4F1E-B827-4DE393651349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC277D59-44E0-4F1E-B827-4DE393651349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E79FAC3-E996-402A-BC10-E8E35944BDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E79FAC3-E996-402A-BC10-E8E35944BDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E79FAC3-E996-402A-BC10-E8E35944BDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E79FAC3-E996-402A-BC10-E8E35944BDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D57FDB0-FBD6-4455-96F1-D81DF424F72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D57FDB0-FBD6-4455-96F1-D81DF424F72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D57FDB0-FBD6-4455-96F1-D81DF424F72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D57FDB0-FBD6-4455-96F1-D81DF424F72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17F14EFE-52E0-4B2C-B12A-07A50D02616D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F14EFE-52E0-4B2C-B12A-07A50D02616D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F14EFE-52E0-4B2C-B12A-07A50D02616D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F14EFE-52E0-4B2C-B12A-07A50D02616D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
