@@ -39,13 +39,6 @@ namespace NumberSequence
                 }
                 j++;
             }
-            //for (uint i = 1; i <= Length; i++)
-            //{
-            //    if (Math.Pow(i, 2) > Square)
-            //    {
-            //        output.Append(i + ",");
-            //    }
-            //}
         }
     }
 }

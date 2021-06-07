@@ -11,8 +11,7 @@ namespace SortingTriangles
         public void Start()
         {
             view = new View();
-            Dictionary<string, double> triangle = view.NewTriangle();
-            view.TrianglesPrint(triangle);
+            view.TrianglesStart();
         }
     }
 }

@@ -8,14 +8,41 @@ namespace NumberSequence
     {
         public uint GetLength()
         {
-            Console.WriteLine("Enter length of number sequence:");
-            uint length = uint.Parse(Console.ReadLine());//validation
+            bool check = true;
+            uint length = 0;
+            while (check)
+            {
+                Console.WriteLine("Enter length of number sequence:");
+                try
+                {
+                    length = uint.Parse(Console.ReadLine());
+                    check = false;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
             return length;
         }
+
         public uint GetSquare()
         {
+            uint square = 0;
+            bool check = true;
+            while (check) 
+            { 
             Console.WriteLine("Enter minimal square:");
-            uint square = uint.Parse(Console.ReadLine());//validation
+                try
+                {
+                    square = uint.Parse(Console.ReadLine());
+                    check = false;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
             return square;
         }
 
