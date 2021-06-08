@@ -32,23 +32,7 @@ namespace Fibonacci
                 {
                     Console.WriteLine(ex.Message);
                 }
-                //switch (answer)
-                //{
-                //    case "1":
-
-                //        FibonacciLength();
-                //        check = false;
-                //        break;
-
-                //    case "2":
-                //        FibonacciRange();
-                //        check = false;
-                //        break;
-                //    default:
-                //        Console.WriteLine("You can enter only 1 or 2, try again.");
-                //        break;
             }
-
             return answer;
         }
         public uint FibonacciLength()

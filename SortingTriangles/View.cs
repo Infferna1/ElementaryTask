@@ -22,9 +22,9 @@ namespace SortingTriangles
                 check = true;
                 while (check)
                 {
-                    Console.WriteLine("Enter <name of triangle>, <length of side>, <length of side>, <length of side>");
+                    Console.WriteLine("Enter <name of triangle> <length of side> <length of side> <length of side>");
                     inputString = Console.ReadLine();
-                    triangleParameters = inputString.Split(',');//Возможно добавить больше вариаций сплита
+                    triangleParameters = inputString.Split(' ');
                     name = triangleParameters[0].Trim();
                     try
                     {
@@ -38,6 +38,7 @@ namespace SortingTriangles
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex.Message);
+                        DisplayTask();
                     }
                 }
                 listOfTriangles.Add(triangle);
@@ -97,9 +98,10 @@ namespace SortingTriangles
         }
         public void DisplayTask()
         {
-            Console.WriteLine("========================================================================================================================================================");
+            Console.WriteLine("========================================================");
             Console.WriteLine("User can enter 4 parameters: \n<string with cymbols more than 0>, \n<double positive number>, \n<double positive number>, \n<double positive number>");
-            Console.WriteLine("User can enter data in the form: <name of triangle>, <length of side>, <length of side>, <length of side>");
+            Console.WriteLine("========================================================");
+            Console.WriteLine("User can enter data in the form: <name of triangle> <length of side> <length of side> <length of side>");
 
         }
         public void TrianglesStart()

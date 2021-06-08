@@ -9,10 +9,10 @@ namespace NumberSequence
         private uint Length;
         private uint Square;
         private StringBuilder output;
-        public NumberSequence(uint length, uint square)
+        public NumberSequence(uint[] parameters)
         {
-            Length = length;
-            Square = square;
+            Length = parameters[0];
+            Square = parameters[1];
         }
         public override string ToString()
         {
@@ -35,7 +35,6 @@ namespace NumberSequence
                     output.Append(j + ",");
                     }
                     i++;
-
                 }
                 j++;
             }

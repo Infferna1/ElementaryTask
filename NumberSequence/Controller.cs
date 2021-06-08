@@ -12,7 +12,7 @@ namespace NumberSequence
         public void Start()
         {
             view = new View();
-            numberSequence = new NumberSequence(view.GetLength(), view.GetSquare());
+            numberSequence = new NumberSequence(view.GetParameters());
             numberSequence.Sequence();
             view.PrintSequence(numberSequence);
         }
