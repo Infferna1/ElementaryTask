@@ -7,48 +7,6 @@ namespace SortingTriangles
 {
     class View
     {
-        //public double GetASide()
-        //{
-        //    Console.WriteLine("Enter A side of triangle:");//Валидация
-        //    double aSide = double.Parse(Console.ReadLine());
-        //    while ((aSide <= 0) || (aSide >= 51))
-        //    {
-        //        Console.WriteLine("Side A must be bigger than 0 and lower than 51\nEnter A side:");
-        //        aSide = double.Parse(Console.ReadLine());
-        //    }
-        //    return aSide;
-        //}
-        //public double GetBSide()
-        //{
-        //    Console.WriteLine("Enter B side of triangle:");//Валидация
-        //    double bSide = double.Parse(Console.ReadLine());
-        //    while ((bSide <= 0) || (bSide >= 51))
-        //    {
-        //        Console.WriteLine("Side B must be bigger than 0 and lower than 51\nEnter B side:");
-        //        bSide = double.Parse(Console.ReadLine());
-        //    }
-        //    return bSide;
-        //}
-        //public double GetCSide()
-        //{
-        //    Console.WriteLine("Side C side of triangle:");//Валидация
-        //    double cSide = double.Parse(Console.ReadLine());
-        //    while ((cSide <= 0) || (cSide >= 51))
-        //    {
-        //        Console.WriteLine("Side C must be bigger than 0 and lower than 51\nEnter Enter C side:");
-        //        cSide = double.Parse(Console.ReadLine());
-        //    }
-        //    return cSide;
-        //}
-
-
-        //public string GetNameTriangle()
-        //{
-        //    Console.WriteLine("Enter name of triangle:");//Валидация
-        //    string nameOfTriangle = Console.ReadLine();
-        //    return nameOfTriangle;
-        //}
-        //public void 
         public List<SortingTriangles> NewTriangle()
         {
             string answer;
@@ -66,7 +24,7 @@ namespace SortingTriangles
                 {
                     Console.WriteLine("Enter <name of triangle>, <length of side>, <length of side>, <length of side>");
                     inputString = Console.ReadLine();
-                    triangleParameters = inputString.Split(',');
+                    triangleParameters = inputString.Split(',');//Возможно добавить больше вариаций сплита
                     name = triangleParameters[0].Trim();
                     try
                     {
@@ -112,6 +70,37 @@ namespace SortingTriangles
                     }
                 }
             }
+        }
+        public void ViewArguments(string[] args)
+        {
+            foreach (var arg in args)
+            {
+                switch (arg)
+                {
+                    case "-help":
+                        DisplayHelp();
+                        break;
+                    case "-task":
+                        DisplayTask();
+                        break;
+                    default:
+                        Console.WriteLine("The specified argument does not exist. To see a list of arguments, enter -help.");
+                        break;
+                }
+            }
+        }
+        public void DisplayHelp()
+        {
+            Console.WriteLine("========================================================");
+            Console.WriteLine("Possible arguments:\n -help - Information about possible arguments\n -task - Information about task");
+
+        }
+        public void DisplayTask()
+        {
+            Console.WriteLine("========================================================================================================================================================");
+            Console.WriteLine("User can enter 4 parameters: \n<string with cymbols more than 0>, \n<double positive number>, \n<double positive number>, \n<double positive number>");
+            Console.WriteLine("User can enter data in the form: <name of triangle>, <length of side>, <length of side>, <length of side>");
+
         }
         public void TrianglesStart()
         {
