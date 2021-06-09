@@ -51,7 +51,38 @@ namespace NumberSequence
             parameters[1] = square;
             return parameters;
         }
+        public void ViewArguments(string[] args)
+        {
+            foreach (var arg in args)
+            {
+                switch (arg)
+                {
+                    case "-help":
+                        DisplayHelp();
+                        break;
+                    case "-task":
+                        DisplayTask();
+                        break;
+                    default:
+                        Console.WriteLine("The specified argument does not exist. To see a list of arguments, enter -help.");
+                        break;
+                }
+            }
+        }
+        public void DisplayHelp()
+        {
+            Console.WriteLine("========================================================");
+            Console.WriteLine("Possible arguments:\n -help - Information about possible arguments\n -task - Information about task");
 
+        }
+        public void DisplayTask()
+        {
+            Console.WriteLine("========================================================");
+            Console.WriteLine("User can enter 2 parameters:\n<positive integer number>, \n<positive integer number>\n both parameters must be greater than zero");
+            Console.WriteLine("========================================================");
+            Console.WriteLine("User can enter data in the form: <length of sequence>\n <minimal square>");
+
+        }
         public void PrintSequence(NumberSequence output)
         {
             Console.WriteLine(output);

@@ -22,6 +22,12 @@ namespace SortingTriangles
             BSide = bSide;
             CSide = cSide;
         }
+        public SortingTriangles(double aSide, double bSide, double cSide)
+        {
+            ASide = aSide;
+            BSide = bSide;
+            CSide = cSide;
+        }
 
         public void TriangleExist()
         {
