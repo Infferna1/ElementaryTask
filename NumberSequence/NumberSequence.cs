@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NumberSequence
 {
-    class NumberSequence
+    public class NumberSequence
     {
         private uint Length;
         private uint Square;
@@ -18,7 +18,8 @@ namespace NumberSequence
         {
             return output.ToString();
         }
-        public void Sequence()
+
+        public StringBuilder Sequence()
         {
             output = new StringBuilder();
             int i = 0;
@@ -38,6 +39,7 @@ namespace NumberSequence
                 }
                 j++;
             }
+            return output;
         }
     }
 }

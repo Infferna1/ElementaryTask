@@ -5,12 +5,11 @@ using System.Text;
 
 namespace SortingTriangles
 {
-    class SortingTriangles
+    public class SortingTriangles
     {
         private double ASide;
         private double BSide;
         private double CSide;
-        //private double S;
         private string Name;
 
         public SortingTriangles()
@@ -31,12 +30,9 @@ namespace SortingTriangles
                 throw new Exception("Triangle with this parameters can't exist");
             }
         }
-
         public double TriangleArea()
         {
             double p = (ASide + BSide + CSide) / 2;
-            //S = Math.Sqrt(p * (p - ASide) * (p - BSide) * (p - CSide));
-            //S = Math.Round(S, 2);
             return Math.Sqrt(p * (p - ASide) * (p - BSide) * (p - CSide));
         }
         public override string ToString()
